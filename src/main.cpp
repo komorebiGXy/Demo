@@ -30,6 +30,7 @@ void loop()
     while (mySerial.read() >= 0)
     {
     }
+    Serial0.print("Hello");
     memcpy(&mydata, cdata, sizeof(ConData));
     Serial.print("mac:");
     Serial.println(mydata.mac);
